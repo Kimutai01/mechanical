@@ -20,7 +20,7 @@ const Why = () => {
   return (
     <div className="bg-[#000]">
       <motion.div
-        className="grid md:grid-cols-3 md:gap-6 mx-36  grid-cols-1 gap-5 absolute -mt-20"
+        className="grid md:grid-cols-3 md:gap-6 md:mx-36 p-5  grid-cols-1 gap-5 md:absolute pt-5 md:-mt-20"
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 1 }}
@@ -75,13 +75,13 @@ const Why = () => {
         </div>
       </motion.div>
       <motion.div
-        className="pt-80 flex gap-10 px-36"
+        className="md:pt-80 p-10 flex gap-10 md:px-36 flex-col md:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 1 }}
         ref={ref}
       >
-        <div className="w-[30%]">
+        <div className="md:w-[30%]">
           <h2 className="text-white text-5xl font-bold ">Why us?</h2>
           <p className="text-[grey] text-xl font-normal medium">
             All Mechanic 128 workshops employ the latest test techniques and
@@ -95,10 +95,10 @@ const Why = () => {
             </div>
           </button>
         </div>
-        <div className="w-[70%]">
+        <div className="md:w-[70%]">
           <div className="mt-10">
             <h1
-              className={`text-5xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
                 activeParagraphIndex === 0 ? "bg-red-500" : ""
               }`}
               style={{
@@ -122,7 +122,7 @@ const Why = () => {
 
           <div className="mt-10">
             <h1
-              className={`text-5xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
                 activeParagraphIndex === 1 ? "bg-red-500" : ""
               }`}
               style={{
@@ -146,7 +146,7 @@ const Why = () => {
 
           <div className="mt-10">
             <h1
-              className={`text-5xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
                 activeParagraphIndex === 2 ? "bg-red-500" : ""
               }`}
               style={{
