@@ -3,6 +3,7 @@ import mot from "../assets/performance.svg";
 import repair from "../assets/autorepair.svg";
 import car from "../assets/fleet.svg";
 import { useInView } from "react-intersection-observer";
+import ReactPlayer from "react-player";
 
 import { motion } from "framer-motion";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -167,6 +168,19 @@ const Why = () => {
               </p>
             )}
           </div>
+        </div>
+      </motion.div>
+
+      <motion.div className="">
+        <div className="w-screen h-screen p-10">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=mYmNM8-XRP0&ab_channel=InsiderCars"
+            playing
+            loop
+            muted
+            width="100%"
+            height="100%"
+          />
         </div>
       </motion.div>
     </div>
