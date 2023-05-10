@@ -74,7 +74,13 @@ const Why = () => {
           </button>
         </div>
       </motion.div>
-      <div className="pt-80 flex gap-10 px-36">
+      <motion.div
+        className="pt-80 flex gap-10 px-36"
+        initial={{ opacity: 0, y: 100 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        ref={ref}
+      >
         <div className="w-[30%]">
           <h2 className="text-white text-5xl font-bold ">Why us?</h2>
           <p className="text-[grey] text-xl font-normal medium">
@@ -90,7 +96,7 @@ const Why = () => {
           </button>
         </div>
         <div className="w-[70%]">
-          <div>
+          <div className="mt-10">
             <h1
               className={`text-5xl text-transparent bg-clip-text font-bold uppercase ${
                 activeParagraphIndex === 0 ? "bg-red-500" : ""
@@ -162,7 +168,7 @@ const Why = () => {
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
