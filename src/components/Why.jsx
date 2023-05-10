@@ -171,7 +171,12 @@ const Why = () => {
         </div>
       </motion.div>
 
-      <motion.div className="">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        ref={ref}
+      >
         <div className="w-screen h-screen p-10">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=mYmNM8-XRP0&ab_channel=InsiderCars"
