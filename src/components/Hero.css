@@ -23,3 +23,29 @@
   background-color: #ff4d24;
   color: #fff;
 }
+
+.why-btn {
+  grid-column-gap: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #ff4d24;
+  border-style: none;
+  border-radius: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: Sarabun, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+}
+
+.why-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
