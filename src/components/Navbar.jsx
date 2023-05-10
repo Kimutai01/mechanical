@@ -48,13 +48,6 @@ const NavBar = () => {
     setShowStoreDetails(!showStoreDetails);
   };
 
-  const handleStoreHover = () => {
-    setShowStoreDetails(true);
-  };
-
-  const handleStoreHoverLeave = () => {
-    setShowStoreDetails(false);
-  };
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -70,7 +63,7 @@ const NavBar = () => {
         </div>
         <div>
           <ul className="hidden md:flex" style={{ color: `${linkColor}` }}>
-            <Link to="/">
+            <Link>
               <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Home
               </li>
@@ -80,15 +73,8 @@ const NavBar = () => {
                 Services
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
                   <ul className="p-2">
-                    <Link className="text-[#fff] py-1 px-2 " to="/services">
-                      Services
-                    </Link>
-                    <Link
-                      to="/serviceDetail"
-                      className="text-[#fff] py-1 px-2 "
-                    >
-                      Service details
-                    </Link>
+                    <Link className="text-[#fff] py-1 px-2 ">Services</Link>
+                    <li className="text-[#fff] py-1 px-2 ">Service details</li>
                   </ul>
                 </div>
               </li>
@@ -98,27 +84,23 @@ const NavBar = () => {
                 Store
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
                   <ul className="p-2">
-                    <Link to="/store" className="text-[#fff] py-1 px-2 ">
-                      Store
-                    </Link>
-                    <Link to="/storeDetail" className="text-[#fff] py-1 px-2 ">
-                      Store details
-                    </Link>
+                    <Link className="text-[#fff] py-1 px-2 ">Store</Link>
+                    <li className="text-[#fff] py-1 px-2 ">Store details</li>
                   </ul>
                 </div>
               </li>
             </div>
-            <Link to="/about">
+            <Link>
               <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 About
               </li>
             </Link>
-            <Link to="/blog">
+            <Link>
               <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Blog
               </li>
             </Link>
-            <Link to="/contact">
+            <Link>
               <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Contact
               </li>
@@ -177,7 +159,7 @@ const NavBar = () => {
           <div>
             <div className="flex flex-col  py-4">
               <ul>
-                <Link to="/" onClick={handleNav}>
+                <Link href="/">
                   <li className="ml-3 text-xl">Home</li>
                 </Link>
                 <li className="relative">
@@ -192,12 +174,12 @@ const NavBar = () => {
                   </div>
                   {showServicesDetails && (
                     <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
-                      <Link to="/services" onClick={handleNav}>
+                      <Link to="/services">
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Services
                         </li>
                       </Link>
-                      <Link to="/serviceDetail" onClick={handleNav}>
+                      <Link to="/servicedetails">
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Service Details
                         </li>
@@ -217,12 +199,12 @@ const NavBar = () => {
                   </div>
                   {showStoreDetails && (
                     <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
-                      <Link to="/store" onClick={handleNav}>
+                      <Link href="/services">
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Store
                         </li>
                       </Link>
-                      <Link to="/storeDetail" onClick={handleNav}>
+                      <Link href="/service-details">
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Store Details
                         </li>
@@ -230,10 +212,10 @@ const NavBar = () => {
                     </ul>
                   )}
                 </li>
-                <Link to="/about">
+                <Link href="/about">
                   <li className="py-4 text-xl ml-3 cursor-pointer">About</li>
                 </Link>
-                <Link to="/blog">
+                <Link href="/blog">
                   <li className="relative cursor-pointer">
                     <div className="flex items-center justify-between px-3">
                       <div className="text-xl">Blog</div>
