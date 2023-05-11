@@ -23,8 +23,8 @@ const Why = () => {
       <motion.div
         className="grid md:grid-cols-3 md:gap-6 md:mx-36 p-5  grid-cols-1 gap-5 md:absolute pt-5 md:-mt-20"
         initial={{ opacity: 0, y: 100 }}
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         ref={ref}
       >
         <div className="bg-[#161616] p-5 shadow-md z-30 rounded-lg">
@@ -79,8 +79,7 @@ const Why = () => {
         className="md:pt-80 p-10 flex gap-10 md:px-36 flex-col md:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
-        ref={ref}
+        transition={{ duration: 0.5 }}
       >
         <div className="md:w-[30%]">
           <h2 className="text-white text-5xl font-bold ">Why us?</h2>
