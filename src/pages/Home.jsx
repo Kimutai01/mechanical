@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import Why from "../components/Why";
 import ServicesOffered from "../components/Services";
 import Faqs from "../components/Faqs";
+import Specialist from "../components/Specialist";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <Why />
       <ServicesOffered />
       <Faqs />
+      <Specialist />
+      <Testimonials />
     </div>
   );
 };

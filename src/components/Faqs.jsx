@@ -11,7 +11,7 @@ const Faqs = () => {
     setActiveParagraphIndex(activeParagraphIndex === index ? null : index);
   };
   return (
-    <div className="flex bg-[#161616] pt-28 md:px-28 ">
+    <div className="flex bg-[#161616] pt-28 md:px-32 ">
       <div className="w-[60%]">
         <h1 className="text-[#fff] text-4xl uppercase font-bold">
           FAQs & News
