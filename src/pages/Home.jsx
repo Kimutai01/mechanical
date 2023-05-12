@@ -6,6 +6,7 @@ import Faqs from "../components/Faqs";
 import Specialist from "../components/Specialist";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Specialist />
       <Testimonials />
       <Pricing />
+      <Contact />
     </div>
   );
 };

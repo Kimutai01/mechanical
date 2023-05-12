@@ -4,7 +4,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 const PricePackage = () => {
   return (
-    <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 md:px-20 py-10 mx-20">
+    <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 md:px-32 py-10">
       <div className="bg-[#161616] rounded-lg p-5">
         <p className="text-[grey]">Starter price</p>
         <h1 className="flex gap-3 mt-4">
@@ -35,9 +35,9 @@ const PricePackage = () => {
           </span>
           <p className="ml-2">Batteries</p>
         </div>
-        <button className="home-btn flex items-center mt-10 mb-10 ">
+        <button className="home-btn flex items-center mt-10 mb-10 group">
           <h1>Get started</h1>
-          <div className="rounded-full bg-[#8e8e8e] font-bold">
+          <div className="rounded-full bg-[#8e8e8e] font-bold group-hover:bg-[#ff866c] ">
             <BsArrowRightShort size={25} className="text-[white]" />
           </div>
         </button>
@@ -111,9 +111,9 @@ const PricePackage = () => {
           </span>
           <p className="ml-2">Batteries</p>
         </div>
-        <button className="home-btn flex items-center mt-10 mb-10 ">
+        <button className="home-btn flex items-center mt-10 mb-10 group">
           <h1>Get started</h1>
-          <div className="rounded-full bg-[#8e8e8e] font-bold">
+          <div className="rounded-full bg-[#8e8e8e] hover:bg-[#ff866c] font-bold group-hover:bg-[#ff866c] ">
             <BsArrowRightShort size={25} className="text-[white]" />
           </div>
         </button>
