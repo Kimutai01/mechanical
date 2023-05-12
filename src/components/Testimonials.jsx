@@ -51,9 +51,9 @@ const Testimonials = () => {
   const currentTestimonial = testimonialsData[currentTestimonialIndex];
 
   return (
-    <div className="mt-[-250px] p-5">
+    <div className="mt-[-250px] p-5 absolute">
       <div className="border bg-[#000] border-[red] flex items-center gap-20 ">
-        <div className="flex items-center h-[450px] p-5 ">
+        <div className="flex gap-2 items-center h-[450px] p-5 ">
           <BsFillArrowLeftCircleFill
             className="text-[red] text-4xl cursor-pointer"
             onClick={handlePreviousTestimonial}
