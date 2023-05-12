@@ -10,7 +10,7 @@ import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 const Contact = () => {
   return (
-    <div className="bg-[#000] flex flex-col md:flex-row pt-20 px-32 pb-20 gap-16">
+    <div className="bg-[#000] flex flex-col md:flex-row pt-20 px-5 md:px-32 pb-20 gap-16">
       <div className="bg-[#161616] md:w-[85%] px-10 rounded-lg pb-10">
         <div className="flex flex-col md:flex-row mt-10 gap-5">
           <div className="flex flex-col md:w-[50%]">
