@@ -52,11 +52,12 @@ const Testimonials = () => {
 
   return (
     <div className="mt-[-250px] p-5 absolute">
-      <div className="border bg-[#000] border-[red] flex items-center gap-20 ">
-        <div className="flex gap-2 items-center h-[450px] p-5 ">
+      <div className="border bg-[#000] border-[red] flex flex-col md:flex-row items-center md:gap-20 gap-10 ">
+        <div className="flex flex-col md:flex-row gap-2 md:items-center h-[450px] p-5 ">
           <BsFillArrowLeftCircleFill
-            className="text-[red] text-4xl cursor-pointer"
+            className="text-[grey] cursor-pointer hidden md:block"
             onClick={handlePreviousTestimonial}
+            size={40}
           />
           <img
             src={currentTestimonial.image}
@@ -64,15 +65,28 @@ const Testimonials = () => {
             className="rounded-lg mt-[-10px] mb-[-20px]"
           />
           <BsFillArrowRightCircleFill
-            className="text-[red] text-4xl cursor-pointer"
+            className="text-[red] cursor-pointer hidden md:block"
             onClick={handleNextTestimonial}
+            size={40}
           />
+          <div className="flex md:hidden gap-2 items-center ml-10">
+            <BsFillArrowLeftCircleFill
+              className="text-[grey]  cursor-pointer"
+              onClick={handlePreviousTestimonial}
+              size={40}
+            />
+            <BsFillArrowRightCircleFill
+              className="text-[red] cursor-pointer"
+              onClick={handleNextTestimonial}
+              size={40}
+            />
+          </div>
         </div>
-        <div className="w-[50%]  ">
-          <h1 className="text-white font-bold text-4xl">
+        <div className="md:w-[50%] w-[80%]  ">
+          <h1 className="text-white font-bold text-3xl md:text-4xl">
             WHAT OUR CUSTOMERS SAY
           </h1>
-          <p className="text-white mt-5 text-lg font-medium">
+          <p className="text-white mt-5 text-sm md:text-lg font-medium">
             {currentTestimonial.paragraph}
           </p>
           <h3 className="text-[red] mt-5 text-2xl font-bold">
