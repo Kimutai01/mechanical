@@ -11,22 +11,22 @@ const Faqs = () => {
     setActiveParagraphIndex(activeParagraphIndex === index ? null : index);
   };
   return (
-    <div className="flex bg-[#161616] pt-28 md:px-32 ">
-      <div className="w-[60%]">
+    <div className="flex flex-col md:flex-row bg-[#161616] pt-28 md:px-32 ">
+      <div className="md:w-[60%] p-5 md:p-0">
         <h1 className="text-[#fff] text-4xl uppercase font-bold">
           FAQs & News
         </h1>
-        <p className="text-[#fff] w-[80%] text-lg font-medium mt-5">
+        <p className="text-[#fff] md:w-[80%] text-lg font-medium mt-5">
           Customer satisfaction is the measure of our success. Our unique
           service promises mean a commitment to finding the best possible
           solution to any problem.
         </p>
         <img src={red} alt="" className="mt-5" />
       </div>
-      <div className="flex flex-col w-[60%] mt-10">
+      <div className="flex flex-col md:w-[60%] p-5 md:p-0 mt-10">
         <div className="mt-10 ">
           <h1
-            className={`md:text-2xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
+            className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
               activeParagraphIndex === 0 ? "bg-red-500" : ""
             }`}
             style={{

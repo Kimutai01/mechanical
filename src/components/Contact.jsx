@@ -10,10 +10,10 @@ import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 const Contact = () => {
   return (
-    <div className="bg-[#000] flex pt-20 px-32 pb-20 gap-16">
-      <div className="bg-[#161616] w-[85%] px-10 rounded-lg pb-10">
-        <div className="flex mt-10 gap-5">
-          <div className="flex flex-col w-[50%]">
+    <div className="bg-[#000] flex flex-col md:flex-row pt-20 px-32 pb-20 gap-16">
+      <div className="bg-[#161616] md:w-[85%] px-10 rounded-lg pb-10">
+        <div className="flex flex-col md:flex-row mt-10 gap-5">
+          <div className="flex flex-col md:w-[50%]">
             <label for="name" className="text-white mb-3">
               Name
             </label>
@@ -25,7 +25,7 @@ const Contact = () => {
               className="bg-[#161616] text-white border-[grey] border-[1px] rounded-lg p-2 font-medium focus:outline-none focus:border-[#ff4d24]"
             />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%]">
             <label for="phone" className="text-white mb-3">
               Phone
             </label>
@@ -38,8 +38,8 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="flex mt-10 gap-5">
-          <div className="flex flex-col w-[50%]">
+        <div className="flex flex-col md:flex-row mt-10 gap-5">
+          <div className="flex flex-col md:w-[50%]">
             <label for="car" className="text-white mb-3">
               Car
             </label>
@@ -51,7 +51,7 @@ const Contact = () => {
               className="bg-[#161616] text-white border-[grey] border-[1px] rounded-lg p-2 font-medium focus:outline-none focus:border-[#ff4d24]"
             />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%]">
             <label for="email" className="text-white mb-3">
               Email Address
             </label>

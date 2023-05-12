@@ -4,10 +4,10 @@ import red from "../assets/jacob.jpg";
 const Specialist = () => {
   return (
     <div className="bg-[#161616] pt-28 pb-96">
-      <h1 className="uppercase text-[white] text-4xl font-bold mx-32">
+      <h1 className="uppercase text-[white] text-3xl p-6 md:p-0 md:text-4xl font-bold md:mx-32">
         meet our specialists
       </h1>
-      <div className="grid md:grid-cols-4 md:gap-5 md:mx-32   grid-cols-1 gap-5 pt-10 ">
+      <div className="grid md:grid-cols-4 md:gap-5 md:mx-32 p-5 md:p-0   grid-cols-1 gap-5 pt-10 ">
         <div>
           <img src={red} alt="" className="rounded-lg" />
           <div className="mt-5">

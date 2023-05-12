@@ -53,7 +53,7 @@ const Testimonials = () => {
   return (
     <div className="mt-[-250px] p-5 absolute">
       <div className="border bg-[#000] border-[red] flex flex-col md:flex-row items-center md:gap-20 gap-10 ">
-        <div className="flex flex-col md:flex-row gap-2 md:items-center h-[450px] p-5 ">
+        <div className="flex flex-col md:flex-row gap-2 md:items-center h-[450px] ml-[-10px] mr-[-10px] md:ml-0 md:mr-0 md:p-5 ">
           <BsFillArrowLeftCircleFill
             className="text-[grey] cursor-pointer hidden md:block"
             onClick={handlePreviousTestimonial}
@@ -82,7 +82,7 @@ const Testimonials = () => {
             />
           </div>
         </div>
-        <div className="md:w-[50%] w-[80%]  ">
+        <div className="md:w-[50%] w-[80%] mt-10 md:mt-0 mb-3  ">
           <h1 className="text-white font-bold text-3xl md:text-4xl">
             WHAT OUR CUSTOMERS SAY
           </h1>
