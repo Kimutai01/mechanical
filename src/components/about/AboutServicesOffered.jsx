@@ -8,7 +8,7 @@ import paint from "../../assets/paint.jpg";
 const AboutServicesOffered = () => {
   return (
     <div className="bg-[#161616] pt-96">
-      <h1 className="text-white w-[70%] text-3xl md:w-[40%] mx-auto text-center font-bold md:text-4xl">
+      <h1 className="text-white w-[70%] text-4xl md:w-[40%] mx-auto text-center font-bold md:text-4xl">
         HIGH-QUALITY WORKMANSHIP AT A FAIR PRICE
       </h1>
       <p className="text-[grey] md:mx-auto mx-3 md:w-[35%] text-center">

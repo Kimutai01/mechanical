@@ -18,15 +18,15 @@ const FleetServices = () => {
     setActiveParagraphIndex(activeParagraphIndex === index ? null : index);
   };
   return (
-    <div className="flex flex-col-reverse md:flex-row  items-center gap-16 mx-10">
-      <div className="flex flex-col p-5  md:p-0 w-[70%]">
-        <div className="mt-10 ">
+    <div className="flex flex-col-reverse md:flex-row  items-center gap-16 md:mx-10">
+      <div className="flex flex-col p-5  md:p-0 md:w-[70%]">
+        <div className="md:mt-10 ">
           <h1
             className={`md:text-2xl text-2xl text-transparent bg-clip-text flex justify-between font-bold uppercase ${
               activeParagraphIndex === 0 ? "bg-red-500" : ""
             }`}
             style={{
-              color: `${activeParagraphIndex === 0 ? "#ff4d23" : "white"} `,
+              color: `${activeParagraphIndex === 0 ? "red" : "white"} `,
             }}
             onClick={() => toggleParagraphVisibility(0)}
           >
@@ -119,7 +119,7 @@ const FleetServices = () => {
         </div>
       </div>
       <div>
-        <img src={red} alt="red car" className="my-16 rounded-xl" />
+        <img src={red} alt="red car" className=" my-4 md:my-16 rounded-xl" />
       </div>
     </div>
   );

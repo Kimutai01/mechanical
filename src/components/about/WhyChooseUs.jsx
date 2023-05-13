@@ -4,7 +4,7 @@ import red from "../../assets/redcar.jpg";
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-[#000] pt-[900px] p-5 md:p-0 md:pt-96 md:px-32 pb-80 flex flex-col-reverse md:flex-row gap-10 ">
+    <div className="bg-[#000] pt-[900px] p-5 md:p-0 md:pt-[450px] md:px-32 pb-80 flex flex-col-reverse md:flex-row gap-10 ">
       <div className="md:mt-28 ">
         <h1 className="text-white uppercase text-4xl md:text-5xl font-bold md:w-[60%]  ">
           Why choose us
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
           </button>
         </div>
       </div>
-      <div className="mt-28 ">
+      <div className="mt-28 md:pb-80">
         <img src={red} alt="" className="rounded-xl" />
       </div>
     </div>

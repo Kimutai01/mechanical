@@ -10,6 +10,7 @@ import Pricing from "../components/Pricing";
 import AboutPricing from "../components/about/AboutPricing";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import AboutTestimonial from "../components/about/AboutTestimonial";
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
       <Hero />
       <AboutFaqs />
       <WhyChooseUs />
-      <Testimonials />
+      <AboutTestimonial />
       <AboutServicesOffered />
       <AboutSpecialist />
       <AboutPricing />
