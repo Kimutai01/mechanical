@@ -5,6 +5,8 @@ import ServiceCard from "../components/all/serviceCard";
 import Pricing from "../components/Pricing";
 import ServiceOffered from "../components/services/ServiceOffered";
 import Patners from "../components/services/Patners";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 const Services = () => {
   return (
@@ -14,6 +16,8 @@ const Services = () => {
       <Pricing />
       <ServiceOffered />
       <Patners />
+      <Contact />
+      <Footer />
     </>
   );
 };

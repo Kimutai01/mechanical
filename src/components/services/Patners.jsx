@@ -6,7 +6,7 @@ import retronic from "../../assets/retronic.png";
 
 const Patners = () => {
   return (
-    <div className="bg-[#000] px-5 pt-10 md:px-32 md:pt-20 md:flex md:justify-between md:items-center grid grid-cols-2">
+    <div className="bg-[#000] px-5 pt-10 md:px-32 md:pt-20 md:flex md:justify-between md:items-center pb-10 grid grid-cols-2">
       <div>
         <img
           src={toyota}
