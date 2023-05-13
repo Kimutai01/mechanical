@@ -12,6 +12,7 @@ import Store from "./pages/Store";
 import StoreDetail from "./pages/StoreDetail";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Performance from "./pages/Performance";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/storeDetail" element={<StoreDetail />} />
         <Route path={"/blog"} element={<Blog />} />
         <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/performance"} element={<Performance />} />
       </Routes>
     </div>
   );

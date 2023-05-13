@@ -5,6 +5,7 @@ import car from "../../assets/fleet.svg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { BsArrowRightShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ServiceCard = () => {
   const { ref, inView } = useInView({
@@ -20,19 +21,21 @@ const ServiceCard = () => {
       ref={ref}
     >
       <div className="bg-[#161616] p-5 shadow-md z-30 rounded-lg">
-        <img src={mot} alt="" className="h-[80px] w-[80px]" />
-        <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
-          Performance check
-        </h1>
-        <p className="text-[#5c5c5c] font-xl font-medium mt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        </p>
-        <button className="home-btn flex items-center mt-5 ">
-          <h1>Read more</h1>
-          <div className="rounded-full bg-[#8e8e8e] font-bold">
-            <BsArrowRightShort size={25} className="text-[white]" />
-          </div>
-        </button>
+        <Link to="/performance">
+          <img src={mot} alt="" className="h-[80px] w-[80px]" />
+          <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
+            Performance check
+          </h1>
+          <p className="text-[#5c5c5c] font-xl font-medium mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          </p>
+          <button className="home-btn flex items-center mt-5 ">
+            <h1>Read more</h1>
+            <div className="rounded-full bg-[#8e8e8e] font-bold">
+              <BsArrowRightShort size={25} className="text-[white]" />
+            </div>
+          </button>
+        </Link>
       </div>
 
       <div className="bg-[#161616] p-5 shadow-md z-30 rounded-lg">
