@@ -1,13 +1,48 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import mot from "../assets/8.svg";
 import service from "../assets/schedule.jpg";
 import detailing from "../assets/detailing.jpg";
 import engine from "../assets/engine.jpg";
+import { useScroll, motion, useAnimation } from "framer-motion";
 
 const ServicesOffered = () => {
+  const { scrollY } = useScroll();
+  const controls = useAnimation();
+
+  const servicesRef = useRef();
+
+  useEffect(() => {
+    const element = servicesRef.current;
+    controls.start("visible");
+
+    const onScroll = () => {
+      const scrollPosition = element.offsetTop - window.innerHeight;
+
+      if (scrollY.current >= scrollPosition) {
+        controls.start("visible");
+      } else {
+        controls.start("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [controls, scrollY]);
+
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div>
-      <div className="bg-[#000]">
+    <div ref={servicesRef} className="bg-[#000]">
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        animate={controls}
+        className="bg-[#000]"
+      >
         <h1>Services</h1>
         <div className=" grid md:grid-cols-3 md:gap-32 md:mx-36 p-5  grid-cols-1 gap-5 pt-5 ">
           <div className=" flex flex-row  md:flex-col justify-center items-center md:text-center">
@@ -129,7 +164,7 @@ const ServicesOffered = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

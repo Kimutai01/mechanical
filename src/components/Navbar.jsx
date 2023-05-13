@@ -64,12 +64,12 @@ const NavBar = () => {
         <div>
           <ul className="hidden md:flex" style={{ color: `${linkColor}` }}>
             <Link to="/">
-              <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Home
               </li>
             </Link>
             <div className="group ml-10">
-              <li className="font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Services
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
                   <ul className="p-2">
@@ -86,7 +86,7 @@ const NavBar = () => {
               </li>
             </div>
             <div className="group ml-10">
-              <li className="font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Store
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
                   <ul className="p-2">
@@ -97,17 +97,17 @@ const NavBar = () => {
               </li>
             </div>
             <Link to="/about">
-              <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 About
               </li>
             </Link>
             <Link>
-              <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Blog
               </li>
             </Link>
             <Link>
-              <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Contact
               </li>
             </Link>
