@@ -132,7 +132,7 @@ const NavBar = () => {
             />
           </div>
           <div>
-            <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-4 hidden md:block">
+            <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-3 hidden md:block">
               get an appointment
             </button>
           </div>

@@ -14,11 +14,11 @@ const AboutFaqs = () => {
           className="border-b border-[grey] md:border-none "
         >
           {activeComponent === "performance check" ? (
-            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-8 rounded-xl uppercase font-bold">
+            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-6 rounded-xl uppercase font-bold">
               Performance check
             </h1>
           ) : (
-            <h1 className="text-white p-3 text-center md:p-8 text-xl md:text-3xl font-bold uppercase">
+            <h1 className="text-white p-3 text-center md:p-6 text-xl md:text-3xl font-bold uppercase">
               Performance check
             </h1>
           )}
@@ -28,11 +28,11 @@ const AboutFaqs = () => {
           className="border-b border-[grey] md:border-none"
         >
           {activeComponent === "autocheck" ? (
-            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-8 rounded-xl uppercase font-bold">
+            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-6 rounded-xl uppercase font-bold">
               Auto Maintainance
             </h1>
           ) : (
-            <h1 className="text-white p-3 text-center md:p-8 text-xl md:text-3xl font-bold uppercase">
+            <h1 className="text-white p-3 text-center md:p-6 text-xl md:text-3xl font-bold uppercase">
               Auto Maintainance
             </h1>
           )}
@@ -40,11 +40,11 @@ const AboutFaqs = () => {
 
         <div onClick={() => setActiveComponent("fleet services")}>
           {activeComponent === "fleet services" ? (
-            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-8 rounded-xl uppercase font-bold">
+            <h1 className="bg-[#ff4d23] text-white text-xl text-center md:text-left md:text-3xl p-3 md:p-6 rounded-xl uppercase font-bold">
               Fleet services
             </h1>
           ) : (
-            <h1 className="text-white p-3 text-center md:p-8 text-xl md:text-3xl font-bold uppercase">
+            <h1 className="text-white p-3 text-center md:p-6 text-xl md:text-3xl font-bold uppercase">
               Fleet services
             </h1>
           )}
