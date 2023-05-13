@@ -4,6 +4,8 @@ import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 const Faqs = () => {
   const [activeParagraphIndex, setActiveParagraphIndex] = useState(null);
 
@@ -26,7 +28,7 @@ const Faqs = () => {
       <div className="flex flex-col md:w-[60%] p-5 md:p-0 mt-10">
         <div className="mt-10 ">
           <h1
-            className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+            className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase flex justify-between ${
               activeParagraphIndex === 0 ? "bg-red-500" : ""
             }`}
             style={{
@@ -36,9 +38,13 @@ const Faqs = () => {
           >
             How long will it take to fix my car
             {activeParagraphIndex === 0 ? (
-              <IoIosArrowDropupCircle className="inline-block ml-2" />
+              <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                <IoIosArrowUp className="inline-block " color="white " />
+              </div>
             ) : (
-              <IoIosArrowDropdownCircle className="inline-block ml-2" />
+              <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                <IoIosArrowDown className="inline-block " />
+              </div>
             )}
           </h1>
 
@@ -56,7 +62,7 @@ const Faqs = () => {
         <div className="border-t-[1px] border-[grey] mt-7">
           <div className="mt-7 ">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase flex justify-between ${
                 activeParagraphIndex === 1 ? "bg-red-500" : ""
               }`}
               style={{
@@ -66,9 +72,13 @@ const Faqs = () => {
             >
               Do i need an appointment
               {activeParagraphIndex === 1 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 
@@ -86,7 +96,7 @@ const Faqs = () => {
         <div className="mt-7 border-t-[1px] border-[grey]">
           <div className="mt-7 ">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase flex justify-between ${
                 activeParagraphIndex === 2 ? "bg-red-500" : ""
               }`}
               style={{
@@ -96,9 +106,13 @@ const Faqs = () => {
             >
               Do you offer warranty
               {activeParagraphIndex === 2 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 
@@ -114,7 +128,7 @@ const Faqs = () => {
         <div className="border-t-[1px] mt-7 border-[grey]">
           <div className="mt-7 ">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase flex justify-between ${
                 activeParagraphIndex === 3 ? "bg-red-500" : ""
               }`}
               style={{
@@ -122,11 +136,17 @@ const Faqs = () => {
               }}
               onClick={() => toggleParagraphVisibility(3)}
             >
-              Do you have complete auto repair services
+              <p className="md:w-[90%]">
+                Do you have complete auto repair services
+              </p>
               {activeParagraphIndex === 3 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 
@@ -142,7 +162,7 @@ const Faqs = () => {
         <div className="border-t-[1px] border-[grey] mt-7">
           <div className="mt-7 ">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase flex justify-between ${
                 activeParagraphIndex === 4 ? "bg-red-500" : ""
               }`}
               style={{
@@ -150,11 +170,18 @@ const Faqs = () => {
               }}
               onClick={() => toggleParagraphVisibility(4)}
             >
-              Can you do a full technical assessment of my car
+              <p className="md:w-[90%]">
+                Can you do a full technical assessment of my car
+              </p>
+
               {activeParagraphIndex === 4 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2 bg-[#000]" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 

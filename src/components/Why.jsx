@@ -8,6 +8,7 @@ import ServiceCard from "./all/serviceCard";
 
 import { motion } from "framer-motion";
 import { BsArrowRightShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 // motion div scrolls up only when the scroll reaches the div
 const Why = () => {
   const [activeParagraphIndex, setActiveParagraphIndex] = useState(null);
@@ -22,7 +23,7 @@ const Why = () => {
   return (
     <div className="bg-[#000]">
       <ServiceCard />
-      <motion.div
+      <div
         className="md:pt-80 p-10 flex gap-10 md:px-36 flex-col md:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
@@ -35,17 +36,19 @@ const Why = () => {
             digital information systems. This ideal combination ensures
             systematic vehicle diagnosis and qualified repair work.
           </p>
-          <button className="why-btn flex items-center mt-5 ">
-            <h1>View more</h1>
-            <div className="rounded-full bg-[#ff866c] font-bold">
-              <BsArrowRightShort size={25} className="text-[white]" />
-            </div>
-          </button>
+          <Link to="/about">
+            <button className="why-btn flex items-center mt-5 ">
+              <h1>View more</h1>
+              <div className="rounded-full bg-[#ff866c] font-bold">
+                <BsArrowRightShort size={25} className="text-[white]" />
+              </div>
+            </button>
+          </Link>
         </div>
         <div className="md:w-[70%]">
           <div className="mt-10">
             <h1
-              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase cursor-pointer ${
                 activeParagraphIndex === 0 ? "bg-red-500" : ""
               }`}
               style={{
@@ -69,7 +72,7 @@ const Why = () => {
 
           <div className="mt-10">
             <h1
-              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase cursor-pointer ${
                 activeParagraphIndex === 1 ? "bg-red-500" : ""
               }`}
               style={{
@@ -93,7 +96,7 @@ const Why = () => {
 
           <div className="mt-10">
             <h1
-              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-5xl text-3xl text-transparent bg-clip-text font-bold uppercase cursor-pointer ${
                 activeParagraphIndex === 2 ? "bg-red-500" : ""
               }`}
               style={{
@@ -115,7 +118,7 @@ const Why = () => {
             )}
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
