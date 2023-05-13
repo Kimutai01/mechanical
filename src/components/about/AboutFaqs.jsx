@@ -1,87 +1,53 @@
 import React, { useState } from "react";
 import PerformanceCheck from "./PerformanceCheck";
 import Autocheck from "./Autocheck";
+import FleetServices from "./FleetServices";
 
 const AboutFaqs = () => {
-  const [activeComponentIndex, setActiveComponentIndex] = useState(0);
-
-  const handleClick = (index) => {
-    setActiveComponentIndex(index);
-  };
+  const [activeComponent, setActiveComponent] = useState("performance check");
 
   return (
-    <div className="absolute mx-32 mt-[-93px]">
-      <div className="flex justify-between bg-[#161616] relative rounded-lg">
-        <div className="flex-1">
-          <h2
-            style={{
-              backgroundColor:
-                activeComponentIndex === 0 ? "red" : "transparent",
-              cursor: "pointer",
-            }}
-            className="text-white uppercase text-3xl font-bold p-7 rounded-lg"
-            onClick={() => handleClick(0)}
-          >
-            Performance check
-          </h2>
-          <div
-            className={`border-t-[1px] border-[grey] ${
-              activeComponentIndex === 0 ? "w-full" : "hidden"
-            }`}
-          />
-          {activeComponentIndex === 0 && (
-            <div className="w-full">
-              <PerformanceCheck />
-            </div>
+    <div className="bg-[#161616] w-[80%] absolute rounded-xl mx-32 mt-[-100px]">
+      <div className="flex justify-between border-b border-[grey] ">
+        <div onClick={() => setActiveComponent("performance check")}>
+          {activeComponent === "performance check" ? (
+            <h1 className="bg-[red] text-white text-3xl p-8 rounded-xl uppercase font-bold">
+              Performance check
+            </h1>
+          ) : (
+            <h1 className="text-white p-8 text-3xl font-bold uppercase">
+              Performance check
+            </h1>
           )}
         </div>
-        <div className="flex-1">
-          <h2
-            style={{
-              backgroundColor:
-                activeComponentIndex === 1 ? "red" : "transparent",
-              cursor: "pointer",
-            }}
-            className="text-white uppercase text-3xl font-bold p-7 rounded-lg"
-            onClick={() => handleClick(1)}
-          >
-            Auto maintenance
-          </h2>
-          <div
-            className={`border-t-[1px] border-[grey] ${
-              activeComponentIndex === 1 ? "w-full" : "hidden"
-            }`}
-          />
-          {activeComponentIndex === 1 && (
-            <div className="w-full">
-              <Autocheck />
-            </div>
+        <div onClick={() => setActiveComponent("autocheck")}>
+          {activeComponent === "autocheck" ? (
+            <h1 className="bg-[red] text-white text-3xl p-8 rounded-xl uppercase font-bold">
+              Auto Maintainance
+            </h1>
+          ) : (
+            <h1 className="text-white p-8 text-3xl font-bold uppercase">
+              Auto Maintainance
+            </h1>
           )}
         </div>
-        <div className="flex-1">
-          <h2
-            style={{
-              backgroundColor:
-                activeComponentIndex === 2 ? "red" : "transparent",
-              cursor: "pointer",
-            }}
-            className="text-white uppercase text-3xl font-bold p-7 rounded-lg"
-            onClick={() => handleClick(2)}
-          >
-            Fleet services
-          </h2>
-          <div
-            className={`border-t-[1px] border-[grey] ${
-              activeComponentIndex === 2 ? "w-full" : "hidden"
-            }`}
-          />
-          {activeComponentIndex === 2 && (
-            <div className="w-full">
-              <PerformanceCheck />
-            </div>
+
+        <div onClick={() => setActiveComponent("fleet services")}>
+          {activeComponent === "fleet services" ? (
+            <h1 className="bg-[red] text-white text-3xl p-8 rounded-xl uppercase font-bold">
+              Fleet services
+            </h1>
+          ) : (
+            <h1 className="text-white p-8 text-3xl font-bold uppercase">
+              Fleet services
+            </h1>
           )}
         </div>
       </div>
+
+      {activeComponent === "performance check" && <PerformanceCheck />}
+      {activeComponent === "autocheck" && <Autocheck />}
+      {activeComponent === "fleet services" && <FleetServices />}
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Autocheck = () => {
             }}
             onClick={() => toggleParagraphVisibility(0)}
           >
-            How long will it take to fix my car
+            Fuel injection services
             {activeParagraphIndex === 0 ? (
               <IoIosArrowDropupCircle className="inline-block ml-2" />
             ) : (
@@ -38,12 +38,10 @@ const Autocheck = () => {
 
           {activeParagraphIndex === 0 && (
             <p className="text-[grey]">
-              Your car might need service for a multitude of reasons from any
-              assortment of low fluids, worn brake linings, or component
-              malfunctions. Depending on what the issue is, it could be fixed in
-              a day or take over 1 week for a major job. Once we diagnose your
-              car, we will be able to give you a better estimate for how long
-              the repair will take.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+              ornare nunc tellus fermentum, amet curabitur lacus. Sit aenean
+              vitae pellentesque consectetur condimentum lorem aliquam lacus
+              vulputate.
             </p>
           )}
         </div>
@@ -58,7 +56,7 @@ const Autocheck = () => {
               }}
               onClick={() => toggleParagraphVisibility(1)}
             >
-              Do i need an appointment
+              Computer diagnosis
               {activeParagraphIndex === 1 ? (
                 <IoIosArrowDropupCircle className="inline-block ml-2" />
               ) : (
@@ -68,11 +66,10 @@ const Autocheck = () => {
 
             {activeParagraphIndex === 1 && (
               <p className="text-[grey]">
-                It is highly recommended that you make an appointment. We are an
-                independent auto repair center and we pride ourselves on our
-                quality work and stellar reviews. We might be completely booked
-                and not be able to get to your car right away. For that reason,
-                we recommend making an appointment or calling ahead.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                sed ornare nunc tellus fermentum, amet curabitur lacus. Sit
+                aenean vitae pellentesque consectetur condimentum lorem aliquam
+                lacus vulputate.
               </p>
             )}
           </div>
@@ -88,7 +85,7 @@ const Autocheck = () => {
               }}
               onClick={() => toggleParagraphVisibility(2)}
             >
-              Do you offer warranty
+              Steering and suspension
               {activeParagraphIndex === 2 ? (
                 <IoIosArrowDropupCircle className="inline-block ml-2" />
               ) : (
@@ -98,9 +95,10 @@ const Autocheck = () => {
 
             {activeParagraphIndex === 2 && (
               <p className="text-[grey]">
-                Yes, we certainly do. Our warranty is 2 years or 24,000 miles
-                and covers you nationwide! We are proud to stand behind our
-                work.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                sed ornare nunc tellus fermentum, amet curabitur lacus. Sit
+                aenean vitae pellentesque consectetur condimentum lorem aliquam
+                lacus vulputate.
               </p>
             )}
           </div>
