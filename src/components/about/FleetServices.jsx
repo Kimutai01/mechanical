@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import red from "../../assets/redcar.jpg";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+
 import {
   IoIosArrowDropupCircle,
   IoIosArrowDropdownCircle,
@@ -16,23 +18,27 @@ const FleetServices = () => {
     setActiveParagraphIndex(activeParagraphIndex === index ? null : index);
   };
   return (
-    <div className="flex">
-      <div className="flex flex-col   p-5 md:p-0 mt-10">
+    <div className="flex flex-col-reverse md:flex-row  items-center gap-16 mx-10">
+      <div className="flex flex-col p-5  md:p-0 w-[70%]">
         <div className="mt-10 ">
           <h1
-            className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+            className={`md:text-2xl text-2xl text-transparent bg-clip-text flex justify-between font-bold uppercase ${
               activeParagraphIndex === 0 ? "bg-red-500" : ""
             }`}
             style={{
-              color: `${activeParagraphIndex === 0 ? "red" : "white"} `,
+              color: `${activeParagraphIndex === 0 ? "#ff4d23" : "white"} `,
             }}
             onClick={() => toggleParagraphVisibility(0)}
           >
             Fuel injection services
             {activeParagraphIndex === 0 ? (
-              <IoIosArrowDropupCircle className="inline-block ml-2" />
+              <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                <IoIosArrowUp className="inline-block " color="white " />
+              </div>
             ) : (
-              <IoIosArrowDropdownCircle className="inline-block ml-2" />
+              <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                <IoIosArrowDown className="inline-block " />
+              </div>
             )}
           </h1>
 
@@ -48,7 +54,7 @@ const FleetServices = () => {
         <div className="border-t-[1px] border-[grey] mt-7">
           <div className="mt-7 ">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text flex justify-between font-bold uppercase ${
                 activeParagraphIndex === 1 ? "bg-red-500" : ""
               }`}
               style={{
@@ -58,9 +64,13 @@ const FleetServices = () => {
             >
               Computer diagnosis
               {activeParagraphIndex === 1 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 
@@ -75,9 +85,9 @@ const FleetServices = () => {
           </div>
         </div>
         <div className="mt-7 border-t-[1px] border-[grey]">
-          <div className="mt-7 ">
+          <div className="mt-7">
             <h1
-              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold uppercase ${
+              className={`md:text-2xl text-2xl text-transparent bg-clip-text font-bold flex justify-between uppercase ${
                 activeParagraphIndex === 2 ? "bg-red-500" : ""
               }`}
               style={{
@@ -87,9 +97,13 @@ const FleetServices = () => {
             >
               Steering and suspension
               {activeParagraphIndex === 2 ? (
-                <IoIosArrowDropupCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 bg-[red] rounded-full text-center items-center flex justify-center mb-1">
+                  <IoIosArrowUp className="inline-block " color="white " />
+                </div>
               ) : (
-                <IoIosArrowDropdownCircle className="inline-block ml-2" />
+                <div className="h-7 w-7 border rounded-full text-center items-center flex justify-center">
+                  <IoIosArrowDown className="inline-block " />
+                </div>
               )}
             </h1>
 
@@ -103,6 +117,9 @@ const FleetServices = () => {
             )}
           </div>
         </div>
+      </div>
+      <div>
+        <img src={red} alt="red car" className="my-16 rounded-xl" />
       </div>
     </div>
   );
