@@ -42,7 +42,7 @@ const ServiceCard = () => {
         <Link to="/repair">
           <img src={repair} alt="" className="h-[80px] w-[80px]" />
           <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
-            Performance check
+            Auto Repair
           </h1>
           <p className="text-[#5c5c5c] font-xl font-medium mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -57,19 +57,21 @@ const ServiceCard = () => {
       </div>
 
       <div className="bg-[#161616] p-5 shadow-md z-30 rounded-lg">
-        <img src={car} alt="" className="h-[80px] w-[80px]" />
-        <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
-          Performance check
-        </h1>
-        <p className="text-[#5c5c5c] font-xl font-medium mt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        </p>
-        <button className="home-btn flex items-center mt-5 ">
-          <h1>Read more</h1>
-          <div className="rounded-full bg-[#8e8e8e] font-bold">
-            <BsArrowRightShort size={25} className="text-[white]" />
-          </div>
-        </button>
+        <Link to="/fleet">
+          <img src={car} alt="" className="h-[80px] w-[80px]" />
+          <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
+            Fleet Services
+          </h1>
+          <p className="text-[#5c5c5c] font-xl font-medium mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          </p>
+          <button className="home-btn flex items-center mt-5 ">
+            <h1>Read more</h1>
+            <div className="rounded-full bg-[#8e8e8e] font-bold">
+              <BsArrowRightShort size={25} className="text-[white]" />
+            </div>
+          </button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -1,21 +1,22 @@
 import React from "react";
-import Autorepair from "../components/all/Autorepair";
+import Fleet from "../components/all/Fleet";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const Repair = () => {
+const FleetDetail = () => {
   return (
     <div>
+      {" "}
       <div className="bg-[#ff4d23] h-[400px]">
         <h1 className="flex text-center  items-center justify-center h-full text-white text-5xl font-bold uppercase">
-          Auto Repair
+          Fleet Services
         </h1>
       </div>
-      <Autorepair />
+      <Fleet />
       <Contact />
       <Footer />
     </div>
   );
 };
 
-export default Repair;
+export default FleetDetail;
