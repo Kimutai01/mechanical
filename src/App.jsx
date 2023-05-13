@@ -13,6 +13,7 @@ import StoreDetail from "./pages/StoreDetail";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Performance from "./pages/Performance";
+import Repair from "./pages/Repair";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path={"/blog"} element={<Blog />} />
         <Route path={"/contact"} element={<Contact />} />
         <Route path={"/performance"} element={<Performance />} />
+        <Route path={"/repair"} element={<Repair />} />
       </Routes>
     </div>
   );
