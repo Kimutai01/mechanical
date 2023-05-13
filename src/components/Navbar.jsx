@@ -96,7 +96,7 @@ const NavBar = () => {
                 </div>
               </li>
             </div>
-            <Link>
+            <Link to="/about">
               <li className="ml-10 font-normal  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 About
               </li>
