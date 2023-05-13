@@ -21,6 +21,19 @@
   height: 100vh;
 }
 
+.service-background {
+  background-image: linear-gradient(
+      to right,
+      rgba(197, 30, 30, 0.5),
+      transparent
+    ),
+    url("https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5naW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
 @keyframes pulse-slow {
   0% {
     transform: scale(1);
