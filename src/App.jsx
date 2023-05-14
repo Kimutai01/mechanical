@@ -32,6 +32,7 @@ function App() {
         <Route path={"/performance"} element={<Performance />} />
         <Route path={"/repair"} element={<Repair />} />
         <Route path={"/fleet"} element={<FleetDetail />} />
+        <Route path={"/store"} element={<Store />} />
       </Routes>
     </div>
   );

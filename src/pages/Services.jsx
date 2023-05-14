@@ -11,7 +11,7 @@ import Contact from "../components/Contact";
 const Services = () => {
   return (
     <>
-      <Hero />
+      <Hero heading="Our Services" />
       <ServiceCard />
       <Pricing />
       <ServiceOffered />

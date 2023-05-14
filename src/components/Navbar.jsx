@@ -90,7 +90,9 @@ const NavBar = () => {
                 Store
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
                   <ul className="p-2">
-                    <Link className="text-[#fff] py-1 px-2 ">Store</Link>
+                    <Link className="text-[#fff] py-1 px-2 " to="/store">
+                      Store
+                    </Link>
                     <li className="text-[#fff] py-1 px-2 ">Store details</li>
                   </ul>
                 </div>
@@ -205,7 +207,7 @@ const NavBar = () => {
                   </div>
                   {showStoreDetails && (
                     <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
-                      <Link href="/services">
+                      <Link href="/store">
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Store
                         </li>

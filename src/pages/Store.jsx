@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/services/Hero";
+import Products from "../components/shop/Products";
+import Footer from "../components/Footer";
 
 const Store = () => {
   return (
-    <div>Store</div>
-  )
-}
+    <>
+      <Hero heading=" Shop" />
 
-export default Store
+      <Products />
+      <Footer />
+    </>
+  );
+};
+
+export default Store;
