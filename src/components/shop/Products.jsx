@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -82,7 +82,7 @@ const AllProducts = [
 
 const Products = () => {
   return (
-    <div className="bg-[#000] pt-28 flex gap-10 md:px-32">
+    <div className="bg-[#000] pt-28 pb-32 flex gap-10 md:px-32">
       <div className="w-[70%] grid grid-cols-2 gap-10">
         {AllProducts.map((product) => {
           return (
@@ -120,7 +120,33 @@ const Products = () => {
           );
         })}
       </div>
-      <div className="w-[30%]">
+      <div className="w-[30%] md:sticky md:top-20 md:h-screen">
+        <div className="bg-[#161616] flex gap-2  rounded-lg p-8">
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-[#161616] border-[1px] rounded-lg border-[grey] w-full py-2 px-2 text-white focus:outline-none"
+          />
+          <button className="why-btn flex items-center">
+            <h1>Search</h1>
+          </button>
+        </div>
+        <div className="bg-[#161616] mt-10 flex flex-col gap-2  rounded-lg p-8">
+          <h1 className="text-white text-xl uppercase font-bold">
+            Product categories
+          </h1>
+          <div className="flex flex-wrap gap-2">
+            <p className="text-white bg-[#ff4d24] hover:bg-[grey] p-2 rounded-lg">
+              Kits
+            </p>
+            <p className="text-white bg-[#ff4d24] hover:bg-[grey] p-2 rounded-lg">
+              Details
+            </p>
+            <p className="text-white bg-[#ff4d24] hover:bg-[grey] p-2 rounded-lg">
+              Oils
+            </p>
+          </div>
+        </div>
         <div className="bg-[#161616] mt-10  rounded-lg p-8">
           <h1 className="uppercase text-white font-bold text-2xl">
             Service hours
