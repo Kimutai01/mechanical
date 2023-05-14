@@ -3,6 +3,7 @@ import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { BsArrowRightShort } from "react-icons/bs";
 import { AiOutlineCalendar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const AllProducts = [
   {
@@ -87,35 +88,37 @@ const Products = () => {
         {AllProducts.map((product) => {
           return (
             <div key={product.id} className="bg-[#161616] rounded-lg">
-              <img
-                src={product.image1}
-                alt={product.name}
-                className="h-72 w-full rounded-t-lg"
-              />
-              <div className="p-6">
-                <h2 className="text-white text-3xl font-bold uppercase">
-                  {product.name}
-                </h2>
-                <div>
-                  {product.sale ? (
-                    <div className="flex gap-10 mt-2">
-                      <p className="text-[grey] line-through font-bold text-xl">
-                        $ {product.initialPrice} USD
-                      </p>
+              <Link to={`/product/${product.id}`}>
+                <img
+                  src={product.image1}
+                  alt={product.name}
+                  className="h-72 w-full rounded-t-lg"
+                />
+                <div className="p-6">
+                  <h2 className="text-white text-3xl font-bold uppercase">
+                    {product.name}
+                  </h2>
+                  <div>
+                    {product.sale ? (
+                      <div className="flex gap-10 mt-2">
+                        <p className="text-[grey] line-through font-bold text-xl">
+                          $ {product.initialPrice} USD
+                        </p>
+                        <p className="text-[#ff4d23] font-bold text-xl">
+                          $ {product.price} USD
+                        </p>
+                      </div>
+                    ) : (
                       <p className="text-[#ff4d23] font-bold text-xl">
                         $ {product.price} USD
                       </p>
-                    </div>
-                  ) : (
-                    <p className="text-[#ff4d23] font-bold text-xl">
-                      $ {product.price} USD
-                    </p>
-                  )}
+                    )}
+                  </div>
+                  <p className="mt-5 text-[grey] font-medium">
+                    {product.description}
+                  </p>
                 </div>
-                <p className="mt-5 text-[grey] font-medium">
-                  {product.description}
-                </p>
-              </div>
+              </Link>
             </div>
           );
         })}
