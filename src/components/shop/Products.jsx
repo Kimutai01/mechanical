@@ -82,8 +82,8 @@ const AllProducts = [
 
 const Products = () => {
   return (
-    <div className="bg-[#000] pt-28 pb-32 flex gap-10 md:px-32">
-      <div className="w-[70%] grid grid-cols-2 gap-10">
+    <div className="bg-[#000] pt-10 px-5 md:pt-28 pb-32 flex flex-col-reverse md:flex-row gap-10 md:px-32">
+      <div className="md:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-10">
         {AllProducts.map((product) => {
           return (
             <div key={product.id} className="bg-[#161616] rounded-lg">
@@ -120,7 +120,7 @@ const Products = () => {
           );
         })}
       </div>
-      <div className="w-[30%] md:sticky md:top-20 md:h-screen">
+      <div className="md:w-[30%] md:sticky md:top-20 md:h-screen">
         <div className="bg-[#161616] flex gap-2  rounded-lg p-8">
           <input
             type="text"
@@ -135,7 +135,7 @@ const Products = () => {
           <h1 className="text-white text-xl uppercase font-bold">
             Product categories
           </h1>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex mt-3 flex-wrap gap-2">
             <p className="text-white bg-[#ff4d24] hover:bg-[grey] p-2 rounded-lg">
               Kits
             </p>
@@ -151,7 +151,7 @@ const Products = () => {
           <h1 className="uppercase text-white font-bold text-2xl">
             Service hours
           </h1>
-          <div className="flex gap-7">
+          <div className="flex mt-3 gap-7">
             <div className="flex items-center gap-2">
               <AiOutlineCalendar size={25} color="#ff4d24" />
               <h1 className="text-[#ff4d24] text-md font-semibold">
