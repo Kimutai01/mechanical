@@ -37,10 +37,10 @@ const Hero = () => {
         </Link>
 
         <div className="grid md:grid-cols-4 md:gap-2 pt-10 mx-5 md:pt-20 grid-cols-2 gap-2">
-          <img src={automobile} alt="" className=" " />
-          <img src={car} alt="" className="" />
-          <img src={auto} alt="" className="" />
-          <img src={mot} alt="" className="" />
+          <img src={automobile} alt="" className="cursor-pointer " />
+          <img src={car} alt="" className="cursor-pointer" />
+          <img src={auto} alt="" className="cursor-pointer" />
+          <img src={mot} alt="" className="cursor-pointer" />
         </div>
       </motion.div>
     </div>

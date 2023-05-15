@@ -168,7 +168,7 @@ const NavBar = () => {
           <div>
             <div className="flex flex-col  py-4">
               <ul>
-                <Link href="/" onClick={handleNav}>
+                <Link to="/" onClick={handleNav}>
                   <li className="ml-3 text-xl">Home</li>
                 </Link>
                 <li className="relative">
@@ -202,7 +202,7 @@ const NavBar = () => {
                 <Link to="/store" onClick={handleNav}>
                   <li className="ml-3 text-xl">Store</li>
                 </Link>
-                <Link href="/about" onClick={handleNav}>
+                <Link to="/about" onClick={handleNav}>
                   <li className="py-4 text-xl ml-3 cursor-pointer">About</li>
                 </Link>
               </ul>
