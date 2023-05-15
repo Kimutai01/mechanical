@@ -59,7 +59,9 @@ const NavBar = () => {
     >
       <div className="flex justify-between items-center w-full h-full md:px-4 py-4 px-2 2xl:px-16 rounded">
         <div className="animate-pulse">
-          <Link className="text-[#fff] font-bold text-3xl">MECHANIC</Link>
+          <Link className="text-[#fff] font-bold text-3xl" to="/">
+            MECHANIC
+          </Link>
         </div>
         <div>
           <ul className="hidden md:flex" style={{ color: `${linkColor}` }}>
