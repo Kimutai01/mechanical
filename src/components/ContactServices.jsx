@@ -40,10 +40,10 @@ const ContactServices = () => {
   };
   return (
     <div className="bg-[#161616]">
-      <h1 className="text-5xl text-center w-[50%] pt-28 mx-auto text-white font-bold">
+      <h1 className=" text-3xl md:text-5xl text-center w-[90%] md:w-[50%] pt-28 mx-auto text-white font-bold">
         SERVICES INCLUDED IN EVERY PLAN
       </h1>
-      <p className="text-[grey] text-center w-[35%] pt-5 mx-auto font-medium">
+      <p className="text-[grey] text-center md:w-[35%] pt-5 mx-auto font-medium">
         Visit us to check your vehicle's status, service history, and repair
         history, view reviews of our services, and much more.
       </p>

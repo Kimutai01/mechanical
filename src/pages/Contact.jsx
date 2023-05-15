@@ -10,7 +10,7 @@ const Contactt = () => {
   return (
     <>
       <div className="service-background">
-        <div className="flex flex-col justify-center px-28 h-full">
+        <div className="flex flex-col justify-center px-8 md:px-28 h-full">
           <h1 className="uppercase text-5xl md:text-6xl font-bold text-white">
             Contact Us
           </h1>

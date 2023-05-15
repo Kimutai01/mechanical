@@ -26,8 +26,8 @@ const Offices = () => {
 
   const sliderOne = (
     <div>
-      <h1>Nairobi</h1>
-      <div className="mt-10 flex gap-5">
+      <h1 className="text-white text-xl uppercase font-bold">Nairobi</h1>
+      <div className="mt-3 flex gap-5">
         <IoLocationSharp color="#ff4d24" size="1.5rem" />
         <h1 className="text-white flex flex-col">
           <a
@@ -62,8 +62,8 @@ const Offices = () => {
 
   const sliderTwo = (
     <div>
-      <h1>Nairobi</h1>
-      <div className="mt-10 flex gap-5">
+      <h1 className="text-white text-xl uppercase font-bold">Nairobi</h1>
+      <div className="mt-3 flex gap-5">
         <IoLocationSharp color="#ff4d24" size="1.5rem" />
         <h1 className="text-white flex flex-col">
           <a
@@ -98,8 +98,8 @@ const Offices = () => {
 
   const sliderThree = (
     <div>
-      <h1>Nairobi</h1>
-      <div className="mt-10 flex gap-5">
+      <h1 className="text-white text-xl uppercase font-bold">Nairobi</h1>
+      <div className="mt-3 flex gap-5">
         <IoLocationSharp color="#ff4d24" size="1.5rem" />
         <h1 className="text-white flex flex-col">
           <a
@@ -298,7 +298,7 @@ const Offices = () => {
           </p>
         </div>
       </div>
-      <div className="px-32 pt-10 ">
+      <div className=" px-5 md:px-32 pt-5 md:pt-10 ">
         <img
           src="https://assets.website-files.com/633148302ffcde12c15b7e7d/6336b759ab720c0998bbc40a_Map.jpg"
           alt=""
@@ -306,18 +306,27 @@ const Offices = () => {
         />
       </div>
 
-      <div className="flex md:flex-row flex-col  mt-24 p-8 gap-2">
+      <div className="flex md:flex-row flex-col  mt-24  gap-10 ">
         <div>
-          <div className="border-b w-[1/2] border-[grey]">
-            <h1 className="text-white text-3xl">CONTACT OUR SUPPORT TEAM</h1>
+          <div className="md:pl-32 px-5 border-[grey]">
+            <h2 className="upprecase font-semibold text-lg text-[red]">
+              GET IN TOUCH
+            </h2>
+            <h1 className="text-white font-bold pt-5 w-[90%] text-3xl">
+              CONTACT OUR SUPPORT TEAM
+            </h1>
             <p className="text-[grey] font-medium text-lg mt-5">
               If you are looking for a local workshop then you can visit our
               workshop finder. For anything else please complete the contact
               form on this page and we will reply to you as soon as possible.
             </p>
+            <hr
+              className="border-b w-full block border-[grey] mt-5"
+              style={{ display: "inline-block" }}
+            />
           </div>
           <div>
-            <div className="flex md:w-[600px] w-[95%] mx-auto items-center justify-between">
+            <div className="flex md:w-[600px] ml-5  justify-between">
               <Swiper
                 loop={true}
                 scrollbar={{
@@ -334,13 +343,13 @@ const Offices = () => {
                   {sliderTwo}
                 </SwiperSlide>
               </Swiper>
-              <div className="flex cursor-pointer items-center">
+              <div className="flex cursor-pointer justify-start ">
                 <IoIosArrowBack
                   size="2rem"
                   className="text-gray-500 hover:text-[#ff4d24]"
                   onClick={swipeBack}
                 />
-                <p className="text-white">|</p>
+                <p className="text-white mt-1">|</p>
                 <IoIosArrowForward
                   className="text-gray-500 hover:text-[#ff4d24]"
                   size="2rem"
