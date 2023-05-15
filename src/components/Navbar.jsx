@@ -108,7 +108,7 @@ const NavBar = () => {
                 Blog
               </li>
             </Link>
-            <Link>
+            <Link to="/contact">
               <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Contact
               </li>

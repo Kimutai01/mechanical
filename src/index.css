@@ -14,7 +14,7 @@
       rgba(197, 30, 30, 0.5),
       transparent
     ),
-    url("https://images.unsplash.com/photo-1636761358757-0a616eb9e17e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fG1lY2hhbmljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+    url("https://assets.website-files.com/633148302ffcde12c15b7e7d/6332b2cee96e6dc40536be2d_Mechanic%20Home%20Banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,10 +24,10 @@
 .service-background {
   background-image: linear-gradient(
       to right,
-      rgba(197, 30, 30, 0.5),
+      rgba(62, 7, 7, 0.5),
       transparent
     ),
-    url("https://images.unsplash.com/photo-1429772011165-0c2e054367b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZW5naW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+    url("https://assets.website-files.com/633148302ffcde12c15b7e7d/633417e6f7701e34e46f04a7_Car%20Service.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 .about-background {
   background-image: linear-gradient(
       to right,
-      rgba(211, 67, 67, 0.5),
+      rgba(199, 16, 16, 0.5),
       transparent
     ),
     url("https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwcmVwYWlyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
