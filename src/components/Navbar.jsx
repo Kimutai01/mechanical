@@ -58,7 +58,7 @@ const NavBar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full md:px-4 py-4 px-2 2xl:px-16 rounded">
-        <div className="animate-bounce">
+        <div className="animate-pulse">
           <Link className="text-[#fff] font-bold text-3xl">MECHANIC</Link>
         </div>
         <div>
@@ -72,42 +72,37 @@ const NavBar = () => {
               <li className="font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Services
                 <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
-                  <ul className="p-2">
-                    <Link to="/services" className="text-[#fff] py-1 px-2 ">
+                  <ul className="p-2 flex flex-col">
+                    <Link
+                      to="/services"
+                      className="text-white py-1 px-2 relative hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black"
+                    >
                       Services
                     </Link>
-                    <Link to="/serviceDetail">
-                      <li className="text-[#fff] py-1 px-2 ">
-                        Service details
-                      </li>
+                    <Link
+                      to="/performance"
+                      className="text-[#fff] py-1 px-2 hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black"
+                    >
+                      Service details
                     </Link>
                   </ul>
                 </div>
               </li>
             </div>
             <div className="group ml-10">
-              <li className="font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
+              <Link
+                className="font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black "
+                to="/store"
+              >
                 Store
-                <div className="opacity-0 group-hover:opacity-100 w-[200px] absolute left-0 top-full bg-[#000] pt-10 py-2 rounded-lg shadow-lg">
-                  <ul className="p-2">
-                    <Link className="text-[#fff] py-1 px-2 " to="/store">
-                      Store
-                    </Link>
-                    <li className="text-[#fff] py-1 px-2 ">Store details</li>
-                  </ul>
-                </div>
-              </li>
+              </Link>
             </div>
             <Link to="/about">
               <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 About
               </li>
             </Link>
-            <Link>
-              <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
-                Blog
-              </li>
-            </Link>
+
             <Link to="/contact">
               <li className="ml-10 font-medium  text-xl hover:text-[#ff4d23] hover:scale-105 transition-all duration-all hover:border-y-black ">
                 Contact
@@ -134,9 +129,11 @@ const NavBar = () => {
             />
           </div>
           <div>
-            <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-3 hidden md:block">
-              get an appointment
-            </button>
+            <Link to="/contact">
+              <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-3 hidden md:block">
+                get an appointment
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -155,7 +152,9 @@ const NavBar = () => {
         >
           <div>
             <div className="flex justify-between items-center w-full mt-3 px-3">
-              <Link className="font-bold text-4xl uppercase">Mechanic</Link>
+              <Link className="font-bold text-4xl uppercase animate-pulse">
+                Mechanic
+              </Link>
               <div
                 onClick={handleNav}
                 className="cursor-pointer text-[#ff4d23]"
@@ -167,7 +166,7 @@ const NavBar = () => {
           <div>
             <div className="flex flex-col  py-4">
               <ul>
-                <Link href="/">
+                <Link href="/" onClick={handleNav}>
                   <li className="ml-3 text-xl">Home</li>
                 </Link>
                 <li className="relative">
@@ -183,11 +182,14 @@ const NavBar = () => {
                   {showServicesDetails && (
                     <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
                       <Link to="/services">
-                        <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
+                        <li
+                          className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200"
+                          onClick={handleNav}
+                        >
                           Services
                         </li>
                       </Link>
-                      <Link to="/servicedetails">
+                      <Link to="/performance" onClick={handleNav}>
                         <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
                           Service Details
                         </li>
@@ -195,49 +197,19 @@ const NavBar = () => {
                     </ul>
                   )}
                 </li>
-                <li className="relative">
-                  <div
-                    className="flex items-center justify-between px-3 py-4 cursor-pointer"
-                    onClick={handleStoreClick}
-                  >
-                    <div className="text-xl">Store</div>
-                    <div>
-                      <BsChevronDown size={25} className={``} />
-                    </div>
-                  </div>
-                  {showStoreDetails && (
-                    <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
-                      <Link href="/store">
-                        <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
-                          Store
-                        </li>
-                      </Link>
-                      <Link href="/service-details">
-                        <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
-                          Store Details
-                        </li>
-                      </Link>
-                    </ul>
-                  )}
-                </li>
-                <Link href="/about">
-                  <li className="py-4 text-xl ml-3 cursor-pointer">About</li>
+                <Link to="/store" onClick={handleNav}>
+                  <li className="ml-3 text-xl">Store</li>
                 </Link>
-                <Link href="/blog">
-                  <li className="relative cursor-pointer">
-                    <div className="flex items-center justify-between px-3">
-                      <div className="text-xl">Blog</div>
-                      <div>
-                        <BsChevronDown size={20} />
-                      </div>
-                    </div>
-                  </li>
+                <Link href="/about" onClick={handleNav}>
+                  <li className="py-4 text-xl ml-3 cursor-pointer">About</li>
                 </Link>
               </ul>
               <div>
-                <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-4 mt-10 ml-4">
-                  get an appointment
-                </button>
+                <Link to="/contact">
+                  <button className="uppercase text-[#fff] bg-[#808080] rounded-full hover:bg-[#ff4d23] font-bold p-4 mt-10 ml-4">
+                    get an appointment
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

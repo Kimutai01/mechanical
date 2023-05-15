@@ -8,6 +8,7 @@ import automobile from "../assets/automobile.svg";
 import car from "../assets/carservice.svg";
 import auto from "../assets/autocar.svg";
 import mot from "../assets/carsmot.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -26,12 +27,14 @@ const Hero = () => {
           We are focused on providing our clients with the highest level of
           quality and excellent customer support.
         </p>
-        <button className="home-btn mt-10 md:mt-20 ml-3 md:ml-3 flex items-center w-[90%] md:w-[28%] ">
-          <h1>Get appointment now</h1>
-          <div className="rounded-full bg-white font-bold">
-            <BsArrowRightShort size={25} className="text-[red]" />
-          </div>
-        </button>
+        <Link to="/contact">
+          <button className="home-btn mt-10 md:mt-20 ml-3 md:ml-3 flex items-center w-[90%] md:w-[28%] ">
+            <h1>Get appointment now</h1>
+            <div className="rounded-full bg-white font-bold">
+              <BsArrowRightShort size={25} className="text-[red]" />
+            </div>
+          </button>
+        </Link>
 
         <div className="grid md:grid-cols-4 md:gap-2 pt-10 mx-5 md:pt-20 grid-cols-2 gap-2">
           <img src={automobile} alt="" className=" " />

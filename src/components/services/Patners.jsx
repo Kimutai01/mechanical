@@ -11,28 +11,28 @@ const Patners = () => {
         <img
           src={toyota}
           alt=""
-          className="hover:opacity-50 transition duration-500 ease-in-out"
+          className="hover:opacity-50 transition duration-500 ease-in-out cursor-pointer"
         />
       </div>
       <div>
         <img
           src={merc}
           alt=""
-          className="hover:opacity-50 transition duration-500 ease-in-out"
+          className="hover:opacity-50 transition duration-500 ease-in-out cursor-pointer"
         />
       </div>
       <div>
         <img
           src={engine}
           alt=""
-          className="hover:opacity-50 transition duration-500 ease-in-out"
+          className="hover:opacity-50 transition duration-500 ease-in-out cursor-pointer"
         />
       </div>
       <div>
         <img
           src={retronic}
           alt=""
-          className="hover:opacity-50 transition duration-500 ease-in-out"
+          className="hover:opacity-50 transition duration-500 ease-in-out cursor-pointer"
         />
       </div>
     </div>

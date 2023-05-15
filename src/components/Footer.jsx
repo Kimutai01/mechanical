@@ -6,28 +6,45 @@ const Footer = () => {
     <div className="bg-[#000] pt-5">
       <div className="flex flex-col md:flex-row justify-between md:mx-32">
         <div>
-          <h1 className="font-bold text-4xl uppercase text-white text-center pb-5">
+          <h1 className="font-bold text-4xl uppercase text-white text-center pb-5 animate-pulse">
             Mechanic
           </h1>
         </div>
-        <div className="md:flex md:flex-row grid grid-cols-2 gap-10 text-lg font-bold text-center text-white">
+        <div className="md:flex md:flex-row grid grid-cols-2 gap-10 text-lg font-bold text-center text-white ">
           <div>
-            <Link to="/services">Home</Link>
+            <Link to="/">Home</Link>
           </div>
           <div>
-            <Link to="/services">About</Link>
+            <Link
+              to="/about"
+              className="hover:text-[#ff4d23] hover:scale-105 transition-all duration-all"
+            >
+              About
+            </Link>
           </div>
           <div>
-            <Link to="/services">Store</Link>
+            <Link
+              to="/contact"
+              className="hover:text-[#ff4d23] hover:scale-105 transition-all duration-all"
+            >
+              Contact
+            </Link>
           </div>
           <div>
-            <Link to="/services">Pricing</Link>
+            <Link
+              to="/services"
+              className="hover:text-[#ff4d23] hover:scale-105 transition-all duration-all"
+            >
+              Services
+            </Link>
           </div>
           <div>
-            <Link to="/services">Store</Link>
-          </div>
-          <div>
-            <Link to="/services">Blog</Link>
+            <Link
+              to="/store"
+              className="hover:text-[#ff4d23] hover:scale-105 transition-all duration-all"
+            >
+              Store
+            </Link>
           </div>
         </div>
       </div>
