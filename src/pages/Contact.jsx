@@ -1,8 +1,12 @@
 import React from "react";
 import Hero from "../components/services/Hero";
 import Offices from "../components/Offices";
+import ContactServices from "../components/ContactServices";
+import Patners from "../components/services/Patners";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
-const Contact = () => {
+const Contactt = () => {
   return (
     <>
       <div className="service-background">
@@ -17,8 +21,12 @@ const Contact = () => {
         </div>
       </div>
       <Offices />
+      <ContactServices />
+      <Patners />
+      <Contact />
+      <Footer />
     </>
   );
 };
 
-export default Contact;
+export default Contactt;

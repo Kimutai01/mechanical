@@ -11,10 +11,10 @@ import ServiceDetail from "./pages/ServiceDetail";
 import Store from "./pages/Store";
 import StoreDetail from "./pages/StoreDetail";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
 import Performance from "./pages/Performance";
 import Repair from "./pages/Repair";
 import FleetDetail from "./pages/FleetDetail";
+import Contactt from "./pages/Contact";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/storeDetail" element={<StoreDetail />} />
         <Route path={"/blog"} element={<Blog />} />
-        <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/contact"} element={<Contactt />} />
         <Route path={"/performance"} element={<Performance />} />
         <Route path={"/repair"} element={<Repair />} />
         <Route path={"/fleet"} element={<FleetDetail />} />
