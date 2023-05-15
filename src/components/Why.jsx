@@ -126,7 +126,7 @@ const Why = () => {
         transition={{ duration: 1 }}
         ref={ref}
       >
-        <div className="md:w-screen h-screen p-10">
+        <div className="md:w-screen md:h-screen p-10">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=mYmNM8-XRP0&ab_channel=InsiderCars"
             playing
