@@ -306,9 +306,9 @@ const Offices = () => {
         />
       </div>
 
-      <div className="flex">
+      <div className="flex md:flex-row flex-col  mt-24 p-8 gap-2">
         <div>
-          <div className="border-b border-[grey]">
+          <div className="border-b w-[1/2] border-[grey]">
             <h1 className="text-white text-3xl">CONTACT OUR SUPPORT TEAM</h1>
             <p className="text-[grey] font-medium text-lg mt-5">
               If you are looking for a local workshop then you can visit our
@@ -317,24 +317,36 @@ const Offices = () => {
             </p>
           </div>
           <div>
-            <div>
+            <div className="flex md:w-[600px] w-[95%] mx-auto items-center justify-between">
               <Swiper
-                loop={false}
+                loop={true}
                 scrollbar={{
                   draggable: true,
                   hide: false,
                 }}
                 modules={[Pagination, Scrollbar]}
-                className="flex justify-center py-8 items-center swiper-container"
+                className="flex cursor-pointer justify-center  items-center swiper-container"
               >
                 <SwiperSlide className="flex  justify-center h-full">
                   {sliderOne}
                 </SwiperSlide>
+                <SwiperSlide className="flex  justify-center h-full">
+                  {sliderTwo}
+                </SwiperSlide>
               </Swiper>
-            </div>
-            <div>
-              <IoIosArrowBack color="#ff4d24" size="2rem" onClick={swipeBack} />
-              <IoIosArrowForward color="#ff4d24" size="2rem" onClick={swipe} />
+              <div className="flex cursor-pointer items-center">
+                <IoIosArrowBack
+                  size="2rem"
+                  className="text-gray-500 hover:text-[#ff4d24]"
+                  onClick={swipeBack}
+                />
+                <p className="text-white">|</p>
+                <IoIosArrowForward
+                  className="text-gray-500 hover:text-[#ff4d24]"
+                  size="2rem"
+                  onClick={swipe}
+                />
+              </div>
             </div>
           </div>
         </div>

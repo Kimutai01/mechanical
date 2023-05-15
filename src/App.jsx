@@ -15,10 +15,12 @@ import Performance from "./pages/Performance";
 import Repair from "./pages/Repair";
 import FleetDetail from "./pages/FleetDetail";
 import Contactt from "./pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
