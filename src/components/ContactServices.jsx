@@ -1,7 +1,7 @@
 import React from "react";
-import mot from "../assets/performance.svg";
-import repair from "../assets/autorepair.svg";
-import car from "../assets/fleet.svg";
+// import mot from "../assets/performance.svg";
+// import repair from "../assets/autorepair.svg";
+// import car from "../assets/fleet.svg";
 import { useInView } from "react-intersection-observer";
 
 import { BsArrowRightShort } from "react-icons/bs";
@@ -56,7 +56,7 @@ const ContactServices = () => {
         >
           <div className="bg-[#000] p-5 shadow-md z-30 rounded-lg">
             <Link to="/performance">
-              <img src={mot} alt="" className="h-[80px] w-[80px]" />
+              {/* <img src={mot} alt="" className="h-[80px] w-[80px]" /> */}
               <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
                 Performance check
               </h1>
@@ -75,7 +75,7 @@ const ContactServices = () => {
 
           <div className="bg-[#000] p-5 shadow-md z-30 rounded-lg">
             <Link to="/repair">
-              <img src={repair} alt="" className="h-[80px] w-[80px]" />
+              {/* <img src={repair} alt="" className="h-[80px] w-[80px]" /> */}
               <h1 className="text-[#fff] text-2xl font-bold uppercase mt-5">
                 Auto Repair
               </h1>

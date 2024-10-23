@@ -50,11 +50,7 @@ const Footer = () => {
       </div>
 
       <p className="text-[grey] md:ml-80 text-center font-medium p-10 md:text-left">
-        @{new Date().getFullYear()} Mechanic. All rights reserved. developed by
-        <span className="text-[#FF0000]">
-          {" "}
-          <Link to="https://www.kiprotichkimutai.dev">Kiprotich Kimutai</Link>
-        </span>
+        @{new Date().getFullYear()} Mechanic. All rights reserved.
       </p>
     </div>
   );
